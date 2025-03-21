@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalorienrechner</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .results {
+      margin-top: 20px;
+      padding: 10px;
+      background: #e9ffe9;
+      border: 1px solid #b2d8b2;
+      border-radius: 5px;
+    }
+
+    .calculator-container {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      text-align: left;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .results {
+      margin-top: 20px;
+      background: #e9ffe9;
+      border: 1px solid #b2d8b2;
+      border-radius: 5px;
+      padding: 15px;
+      text-align: left;
+    }
+
+.chart-container 
+{
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 30px auto 0;
+}
+
+canvas 
+{
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <button class="menu-btn">&#9776;</button>
+          <ul class="dropdown-content">
+            <li><a href="kalorienrechner.html">Bedarfsrechner</a></li>
+            <li><a href="#">Ansprechpartner</a></li>
+            <li><a href="#">Übungen</a></li>
+          </ul>
+          <h1>Ernährungsblog - <span>gesund & lecker</span></h1>
+        </div>
+      </header>
+    
+      <main>
+        <div class="calculator-container">
+          <h2>Kalorienrechner</h2>
+          <label>Alter</label>
+          <input type="number" id="age" placeholder="Alter in Jahren">
+    
+          <label>Geschlecht</label>
+          <select id="gender">
+            <option value="male">Männlich</option>
+            <option value="female">Weiblich</option>
+          </select>
+    
+          <label>Gewicht (kg)</label>
+          <input type="number" id="weight" placeholder="z.B. 70">
+    
+          <label>Größe (cm)</label>
+          <input type="number" id="height" placeholder="z.B. 175">
+    
+          <label>Aktivitätslevel</label>
+          <select id="activity">
+            <option value="1.2">Kaum aktiv</option>
+            <option value="1.375">Leicht aktiv</option>
+            <option value="1.55">Mäßig aktiv</option>
+            <option value="1.725">Sehr aktiv</option>
+            <option value="1.9">Extrem aktiv</option>
+          </select>
+    
+          <button onclick="calculateCalories()">Berechnen</button>
+    
+          <div class="results" id="results" style="display:none;"></div>
+            <div class="chart-container">
+                <canvas id="macroChart"></canvas>
+            </div>
+        </div>
+      </main>
+    
+      <footer>
+        <h2>Fitnessküche - <span>gesund & nachhaltig</span></h2>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="calculations.js"></script>
+
+</body>
+</html>

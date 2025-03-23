@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezepte</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .rezepte-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #9cc01e;
+    }
+
+    .rezept-kategorie {
+      margin-bottom: 40px;
+    }
+
+    .rezept-kategorie h3 {
+      border-left: 10px solid #9cc01e;
+      padding-left: 10px;
+      color: #444;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .rezept {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .rezept h4 {
+      margin-bottom: 8px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .rezept ul {
+      padding-left: 20px;
+      margin: 8px 0;
+    }
+
+    .rezept p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="dropdown">
+        <button class="menu-btn">&#9776;</button>
+        <ul class="dropdown-content">
+          <li><a href="calcutator.html">Bedarfsrechner</a></li>
+          <li><a href="persons.html">Ansprechpartner</a></li>
+          <li><a href="uebung.html">Übungen</a></li>
+          <li><a href="rezepte.html">Rezepte</a></li>
+        </ul>
+      </div>
+      <h1 class="site-title">Ernährungsblog - <span>gesund & lecker</span></h1>
+      <div class="header-spacer"></div>
+    </div>
+  </header>
+
+  <main class="rezepte-container">
+    <h2>Gesunde Rezepte</h2>
+
+    <!-- 🥗 Abnehmen -->
+    <section class="rezept-kategorie">
+      <h3>🥗 Abnehmen (kalorienarm & sättigend)</h3>
+
+      <div class="rezept">
+        <h4>1.1 Zucchini-Nudeln mit Avocado-Pesto</h4>
+        <p><strong>Zutaten:</strong></p>
+        <ul>
+          <li>2 Zucchini (spiralisiert)</li>
+          <li>1 Avocado</li>
+          <li>1 Knoblauchzehe</li>
+          <li>1 EL Zitronensaft</li>
+          <li>1 EL Olivenöl</li>
+          <li>1 Handvoll Basilikum</li>
+          <li>Salz, Pfeffer</li>
+        </ul>
+        <p><strong>Zubereitung:</strong><br>
+          Avocado, Knoblauch, Zitronensaft, Olivenöl und Basilikum pürieren. Zucchini-Nudeln mit dem Pesto vermengen und servieren.
+        </p>
+      </div>
+
+      <div class="rezept">
+        <h4>1.2 Hähnchen-Gemüse-Pfanne</h4>
+        <p><strong>Zutaten:</strong></p>
+        <ul>
+          <li>150 g Hähnchenbrust</li>
+          <li>1 Zucchini, 1 Paprika, 1 Karotte</li>
+          <li>1 EL Olivenöl</li>
+          <li>Salz, Pfeffer, Paprikapulver</li>
+        </ul>
+        <p><strong>Zubereitung:</strong><br>
+          Hähnchen in Streifen schneiden und anbraten. Gemüse dazugeben, würzen und ca. 10 Minuten garen.
+        </p>
+      </div>
+    </section>
+
+    <!-- 🥩 Muskelaufbau -->
+    <section class="rezept-kategorie">
+      <h3>🥩 Muskelaufbau (eiweißreich & nahrhaft)</h3>
+
+      <div class="rezept">
+        <h4>2.1 Protein-Pancakes</h4>
+        <p><strong>Zutaten:</strong></p>
+        <ul>
+          <li>1 Banane, 2 Eier</li>
+          <li>30 g Proteinpulver</li>
+          <li>50 g Haferflocken</li>
+          <li>1 TL Backpulver</li>
+          <li>50 ml Milch</li>
+        </ul>
+        <p><strong>Zubereitung:</strong><br>
+          Alle Zutaten mixen und in einer Pfanne ausbacken. Mit Joghurt oder Beeren servieren.
+        </p>
+      </div>
+
+      <div class="rezept">
+        <h4>2.2 Lachs mit Quinoa und Brokkoli</h4>
+        <p><strong>Zutaten:</strong></p>
+        <ul>
+          <li>150 g Lachsfilet</li>
+          <li>50 g Quinoa</li>
+          <li>100 g Brokkoli</li>
+          <li>1 TL Olivenöl, Zitronensaft, Salz, Pfeffer</li>
+        </ul>
+        <p><strong>Zubereitung:</strong><br>
+          Lachs mit Zitronensaft beträufeln und würzen, dann braten oder backen. Quinoa kochen, Brokkoli dämpfen und beides mit dem Lachs servieren.
+        </p>
+      </div>
+    </section>
+
+    <!-- 🍎 Gesünder essen -->
+    <section class="rezept-kategorie">
+      <h3>🍎 Gesünder essen (nährstoffreich & ausgewogen)</h3>
+
+      <div class="rezept">
+        <h4>3.1 Bunte Buddha Bowl</h4>
+        <p><strong>Zutaten:</strong></p>
+        <ul>
+          <li>50 g Quinoa oder Vollkornreis</li>
+          <li>1 Handvoll Blattspinat</li>
+          <li>½ Avocado, ½ Karotte (geraspelt)</li>
+          <li>1 EL Kichererbsen</li>
+          <li>1 EL Joghurt-Dressing</li>
+        </ul>
+        <p><strong>Zubereitung:</strong><br>
+          Alle Zutaten in einer Schüssel anrichten und mit Dressing servieren.
+        </p>
+      </div>
+
+      <div class="rezept">
+        <h4>3.2 Chia-Pudding mit Beeren</h4>
+        <p><strong>Zutaten:</strong></p>
+        <ul>
+          <li>2 EL Chiasamen</li>
+          <li>200 ml Mandelmilch</li>
+          <li>1 TL Honig</li>
+          <li>50 g Beeren</li>
+        </ul>
+        <p><strong>Zubereitung:</strong><br>
+          Chiasamen mit Mandelmilch und Honig mischen, über Nacht quellen lassen. Mit frischen Beeren servieren.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
